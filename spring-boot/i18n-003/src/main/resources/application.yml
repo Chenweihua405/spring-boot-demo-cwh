@@ -1,0 +1,21 @@
+spring:
+  messages:
+    basename: messages
+    encoding: UTF-8
+    fallbackToSystemLocale: false
+  datasource:
+    primary: # 默认数据源
+      jdbc-url: jdbc:mysql://localhost:3306/default_db?useSSL=false
+      username: root
+      password: password
+      driver-class-name: com.mysql.cj.jdbc.Driver
+    usa:
+      jdbc-url: jdbc:mysql://localhost:3306/en_db?useSSL=false
+      username: root
+      password: password
+      driver-class-name: com.mysql.cj.jdbc.Driver
+    china:
+      jdbc-url: jdbc:mysql://localhost:3306/cn_db?useSSL=false
+      username: root
+      password: password
+      driver-class-name: com.mysql.cj.jdbc.Driver
