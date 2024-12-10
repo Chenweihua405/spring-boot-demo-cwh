@@ -17,6 +17,7 @@
         <module>i18n-003</module>
         <module>Caffiene</module>
         <module>dynamic-datasource</module>
+        <module>design-pattern</module>
     </modules>
 
     <properties>

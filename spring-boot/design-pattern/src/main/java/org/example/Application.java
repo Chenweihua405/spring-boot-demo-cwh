@@ -9,7 +9,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @date 2024/11/25
  */
 @SpringBootApplication
-@MapperScan({ "org.example.mapper" })
+@MapperScan({"org.example.mapper"})
 public class Application {
     public static void main(String[] args) {
         SpringApplication.run(Application.class);

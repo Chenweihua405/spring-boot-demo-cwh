@@ -16,3 +16,26 @@ spring:
           username: root
           password: root
           driver-class-name: com.mysql.jdbc.Driver
+
+mybatis-plus:
+  # MyBatis-Plus Mapper XML文件路径配置
+  mapper-locations: classpath*:/org/example/mapper/*Mapper.xml,classpath*:mapper/*.xml,classpath*:/mappers/*.xml
+  # MyBatis-Plus 类型别名包配置
+  typeAliasesPackage: org.example
+  global-config:
+    # 全局配置：数据库字段下划线映射驼峰配置
+    db-column-underline: true
+    db-config:
+      # 字段策略配置
+      id-type: "ASSIGN_ID"
+      # 逻辑删除标记值配置
+      field-strategy: 2
+      # 逻辑未删除标记值配置
+      logic-delete-value: floor(extract(epoch from now()))
+  configuration:
+    # 将数据库列名映射为驼峰命名配置
+    map-underscore-to-camel-case: true
+    # 缓存是否启用配置
+    cache-enabled: false
+    # 空值jdbc类型配置
+    jdbc-type-for-null: 'null'
